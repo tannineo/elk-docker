@@ -170,7 +170,7 @@ ADD ./kibana.yml ${KIBANA_HOME}/config/kibana.yml
 ###############################################################################
 
 WORKDIR ${LOGSTASH_HOME}
-RUN gosu logstash bin/logstash-plugin install logstash-input-rss
+RUN gosu logstash bin/logstash-plugin install logstash-input-udp
 
 ###############################################################################
 #                                   START
